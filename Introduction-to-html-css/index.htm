@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
+    <script>
+      console.log(
+        "In para container",
+        document.getElementById("para-container").innerHTML
+      );
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <!-- <script type="text/javascript" src="./session6.js" /> -->
+    <!-- <script type="text/javascript" src="./index.js" /> -->
     <style>
       h1 {
         color: chocolate;
       }
     </style>
+    <!-- <script type="text/javascript" src="./session6.js"></script>
+    <script async type="text/javascript" src="./session6.js"></script> -->
+    <script defer type="text/javascript" src="./session6.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script defer type="text/babel">
+      class Hello extends React.Component {
+        render() {
+          return <div>Welcome to geeksforgeeks course by Sumit Kapoor</div>;
+        }
+      }
+      const rootElement = document.getElementById("root");
+      console.log(rootElement);
+      ReactDOM.render(<Hello />, document.getElementById("root"));
+    </script>
   </head>
   <body>
     <!-- <h1>Hello World</h1>
@@ -19,25 +49,25 @@
     <p>
       <b>We are <u>doing</u> a full-stack course</b>
     </p>
-    <a href="http://www.google.com" target="_main">Click me</a>
-    <img
+    <a href="http://www.google.com" target="_main">Click me</a> -->
+    <!-- <img
       src="https://en.wikipedia.org/wiki/File:Google_Images_2015_logo.svg"
       width="200px"
       height="100px"
       alt="Failed to download"
     />
     <br />
-    <big>I'm good</big>
-    <small>Hey how are you?</small> -->
-    <!-- <p>We are doing a full-stack course</p> -->
-    <!-- <header><h1>Introduction to semantic tags</h1></header>
+    <big>I'm good</big> -->
+    <!-- <small>Hey how are you?</small>
+    <p>We are doing a full-stack course</p>
+    <header><h1>Introduction to semantic tags</h1></header>
     <main>
       <section>Learning HTML basics</section>
       <aside>Ads will go here</aside>
       <article>Testimonials</article>
     </main>
-    <footer>@copyright 2023 gfg</footer> -->
-    <!-- <table border="2px">
+    <footer>@copyright 2023 gfg</footer>
+    <table border="2px">
       <thead>
         <tr>
           <th colspan="2">Name</th>
@@ -46,8 +76,8 @@
           <th>Company</th>
         </tr>
       </thead>
-      <tbody>
-        <caption>
+      <tbody> -->
+    <!-- <caption>
           UserLevel Information
         </caption>
         <tr>
@@ -94,9 +124,9 @@
       <li>VolleyBall</li>
       <li>Football</li>
       <li>Tennis</li>
-    </ol>
-    <form action="index.php">
-      <input type="text" placeholder="username" />
+    </ol> -->
+    <!-- <form action="index.php"> -->
+    <!-- <input type="text" placeholder="username" />
       <hr />
       <input type="password" placeholder="password" />
       <hr />
@@ -114,8 +144,8 @@
       <input type="checkbox" value="node.js" /> react.js
       <select name="state">
         <option value="UP">UttarPradesh</option>
-        <option value="MP">MadhyaPradesh</option>
-        <option value="HP">HimachalPradesh</option>
+        <option value="MP">MadhyaPradesh</option> -->
+    <!-- <option value="HP">HimachalPradesh</option>
         <option value="UK">Uttarakhand</option>
       </select>
       <hr />
@@ -124,8 +154,8 @@
       <input type="submit" />
       <div class="container">
         <p id="para-container">Testing the id selector</p>
-      </div>
-    </form> -->
+      </div> -->
+    <!-- </form> -->
     <!-- <div class="parent">
       Parent
       <div class="child-1">Child-2</div>
@@ -133,6 +163,49 @@
       <div class="child-3">Child-4</div>
       <div class="child-4">Child-5</div>
     </div> -->
-    <div class="container"></div>
+    <!-- <div class="container"></div>
+    <div class="flex-container">
+      <div class="flex-item item1">Item 1</div>
+      <div class="flex-item item2">Item 2</div>
+      <div class="flex-item item3">Item 3</div>
+      <div class="flex-item item4">Item 4</div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-items item1">Item 1</div>
+      <div class="flex-items item2">Item 2</div>
+      <div class="flex-items item3">Item 3</div>
+      <div class="flex-items item4">Item 4</div>
+      <div class="flex-items item5">Item 5</div>
+      <div class="flex-items item1">Item 1</div>
+      <div class="flex-items item2">Item 2</div>
+      <div class="flex-items item3">Item 3</div>
+      <div class="flex-items item4">Item 4</div>
+      <div class="flex-items item5">Item 5</div>
+    </div> -->
+    <!-- <div
+      class="parent-container"
+      style="
+        background-color: darkblue;
+        width: 400px;
+        height: 100px;
+        padding: 50px;
+      "
+    >
+      <p class="children-1" style="background-color: black">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil totam
+        quis ratione nostrum repudiandae rem, nam dignissimos porro suscipit
+        blanditiis exercitationem unde rerum consequuntur necessitatibus
+        recusandae, libero atque omnis incidunt?
+      </p>
+    </div> -->
+    <div id="root"></div>
   </body>
 </html>
+
+<!-- JSX
+
+<Name>
+  <Age>
+
+  </Age>
+</Name> -->
