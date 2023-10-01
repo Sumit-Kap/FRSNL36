@@ -2,6 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import Homepage from "./Homepage";
+import Test from "./Test";
+import Demo from "./Demo";
+import Component from "./Component";
 // functional component
 // class based component - functional components were called as dumb components.
 // functional component + hooks
@@ -12,14 +15,25 @@ import Homepage from "./Homepage";
 // props - function arguments
 // Parent
 // Next week - Example on these methods, routing, design patterns in react class components. functional components and hooks,
+// Create a todo application using react.js similar to google keep
+// Inheritance
+// Polymorphism
+// Abstraction
+// Encapsulation
+
+// value, reference - memory address, undefined, shallow copy
+
+// shallow cloning -
+// const obj =
+
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props); // instantiate the parent class constructor method.
     console.log("In constructor");
     this.state = {
       name: "",
       data: "",
-      learnerName: "",
+      learnerName: "Sumit",
     };
     this.handleCallback = this.handleCallback.bind(this);
   }
@@ -38,7 +52,7 @@ class App extends React.Component {
   }
   shouldComponentUpdate(props, state) {
     console.log("In should component update", props, state);
-    return true;
+    return false;
   }
   componentWillMount() {
     console.log("In componentWillMount");
@@ -72,6 +86,9 @@ class App extends React.Component {
         <Homepage learnerName={name} cb={this.handleCallback} />
         <Homepage learnerName={name} cb={this.handleCallback} />
         <a href="http://www.google.com">Click me</a>
+        <Test />
+        <Demo />
+        <Component />
       </React.Fragment>
     );
   }
