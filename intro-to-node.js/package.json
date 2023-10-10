@@ -1,0 +1,15 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "A started node.js application",
+  "main": "index.js",
+  "type":"commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sumit Kapoor",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
